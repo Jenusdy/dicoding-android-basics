@@ -7,12 +7,25 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
+import androidx.activity.result.contract.ActivityResultContracts
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var buttonMoveNoData: Button
     private lateinit var buttonMoveWithData: Button
     private lateinit var buttonMoveWithObject: Button
     private lateinit var buttonDialNumber: Button
+    private lateinit var textViewResult: TextView
+
+    private val resultLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        if (result.resultCode == MoveForResultActivity.RESULT_CODE && result.data != null) {
+            val selectedValue =
+                result.data?.getIntExtra(MoveForResultActivity.EXTRA_SELECTED_VALUE, 0)
+            textViewResult.text = "Hasil : $selectedValue"
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +46,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         buttonDialNumber = findViewById(R.id.btn_dial_number)
         buttonDialNumber.setOnClickListener(this)
+
+        val btnMoveForResult:Button = findViewById(R.id.btn_move_for_result)
+        btnMoveForResult.setOnClickListener(this)
+        textViewResult = findViewById(R.id.tv_result)
+
+
 
     }
 
@@ -63,6 +82,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val phoneNumber = "081210841382"
                 val dialPhoneIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber"))
                 startActivity(dialPhoneIntent)
+            }
+            R.id.btn_move_for_result -> {
+                val moveForResultIntent = Intent(this@MainActivity, MoveForResultActivity::class.java)
+                resultLauncher.launch(moveForResultIntent)
             }
         }
     }
