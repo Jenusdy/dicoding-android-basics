@@ -10,6 +10,7 @@ import android.widget.Button
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var buttonMoveNoData: Button
     private lateinit var buttonMoveWithData: Button
+    private lateinit var buttonMoveWithObject: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +26,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         buttonMoveWithData = findViewById(R.id.btn_move_activity_data)
         buttonMoveWithData.setOnClickListener(this)
 
+        buttonMoveWithObject = findViewById(R.id.btn_move_activity_object)
+        buttonMoveWithObject.setOnClickListener(this)
+
     }
 
     override fun onClick(v: View?) {
@@ -38,6 +42,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 intent.putExtra(MoveWithDataActivity.EXTRA_NAME, "Fawcet Jenusdy Makay")
                 intent.putExtra(MoveWithDataActivity.EXTRA_AGE, 26)
                 startActivity(intent)
+            }
+            R.id.btn_move_activity_object -> {
+                val person = Person(
+                    "DicodingAcademy",
+                    5,
+                    "academy@dicoding.com",
+                    "Bandung"
+                )
+                val moveWithObjectIntent = Intent(this@MainActivity, MoveWithObjectActivity::class.java)
+                moveWithObjectIntent.putExtra(MoveWithObjectActivity.EXTRA_PERSON, person)
+                startActivity(moveWithObjectIntent)
             }
         }
     }
