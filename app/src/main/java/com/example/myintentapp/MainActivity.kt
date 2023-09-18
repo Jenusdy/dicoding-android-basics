@@ -1,6 +1,7 @@
 package com.example.myintentapp
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -11,6 +12,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var buttonMoveNoData: Button
     private lateinit var buttonMoveWithData: Button
     private lateinit var buttonMoveWithObject: Button
+    private lateinit var buttonDialNumber: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +30,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         buttonMoveWithObject = findViewById(R.id.btn_move_activity_object)
         buttonMoveWithObject.setOnClickListener(this)
+
+        buttonDialNumber = findViewById(R.id.btn_dial_number)
+        buttonDialNumber.setOnClickListener(this)
 
     }
 
@@ -53,6 +58,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val moveWithObjectIntent = Intent(this@MainActivity, MoveWithObjectActivity::class.java)
                 moveWithObjectIntent.putExtra(MoveWithObjectActivity.EXTRA_PERSON, person)
                 startActivity(moveWithObjectIntent)
+            }
+            R.id.btn_dial_number -> {
+                val phoneNumber = "081210841382"
+                val dialPhoneIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber"))
+                startActivity(dialPhoneIntent)
             }
         }
     }
