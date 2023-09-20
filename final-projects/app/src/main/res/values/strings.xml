@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Musyrik</string>
+
+    <string name="judul_music">Judul Music</string>
+    <string name="deskripsi_band">Deskripsi</string>
+
+    <string-array name="data_judul">
+        <item>Amigdala - Kukira kau rumah</item>
+        <item>Andra And The Backbone - Terdalam</item>
+        <item>Banda Neira - Sampai Jadi Debu</item>
+        <item>For Revenge - Serena</item>
+        <item>Ghea Indrawati - Jiwa Yang Bersedih</item>
+        <item>Hindia - Cincin</item>
+        <item>Keshi - Limbo</item>
+        <item>Last Child - Duka</item>
+        <item>Notion - The Rare Occasions</item>
+        <item>Olivia Rodrigo - Deja Vu</item>
+        <item>Phoneme - Sunya Reda</item>
+        <item>Reality Club - Is It The Answer</item>
+        <item>The Walters - I love you so</item>
+        <item>Twenty One Pilots - Ride</item>
+        <item>Young - Vacations</item>
+    </string-array>
+
+    <string-array name="data_deskripsi">
+        <item>Amigdala adalah band rock alternatif Indonesia yang dibentuk di Jakarta pada tahun 2010. Band ini terdiri dari Angga (vokal), Fajar (gitar), Arief (bass), dan Indra (drum).</item>
+        <item>Andra and the Backbone adalah band rock Indonesia yang dibentuk di Jakarta pada tahun 2003. Band ini terdiri dari Andra Ramadhan (gitar), Dedy Lisan (bass), dan Elang Cakrawala (drum).</item>
+        <item>Banda Neira adalah duo folk Indonesia yang dibentuk di Jakarta pada tahun 2011. Duo ini terdiri dari Rara Sekar (vokal, gitar) dan Kevin Aprilio (gitar, bas).</item>
+        <item>For Revenge adalah band rock Indonesia yang dibentuk di Jakarta pada tahun 2012. Band ini terdiri dari Rangga Aditha (vokal, gitar), Aditya Pratama (bass), dan Adib Hidayat (drum).</item>
+        <item>Ghea Indrawati adalah penyanyi dan penulis lagu Indonesia. Ia memulai karier musiknya pada tahun 2014.</item>
+        <item>Hindia adalah band indie pop Indonesia yang dibentuk di Jakarta pada tahun 2014. Band ini terdiri dari Baskara Putra (vokal, gitar), Gusti Irwan Wibowo (bass), dan Adib Hidayat (drum).</item>
+        <item>Keshi adalah penyanyi dan penulis lagu Amerika Serikat. Ia memulai karier musiknya pada tahun 2014.</item>
+        <item>Last Child adalah band rock Indonesia yang dibentuk di Jakarta pada tahun 2015. Band ini terdiri dari Stevie Item (vokal, gitar), Rey Marshall (gitar), Qabil Akbar (bas), dan Rangga (drum).</item>
+        <item>Notion adalah band rock alternatif Indonesia yang dibentuk di Jakarta pada tahun 2016. Band ini terdiri dari Roby Purba (vokal, gitar), Rama (gitar), Adit (bass), dan Iwan (drum).</item>
+        <item>Olivia Rodrigo adalah penyanyi dan penulis lagu Amerika Serikat. Ia memulai karier musiknya pada tahun 2019.</item>
+        <item>Phoneme adalah band rock Indonesia yang dibentuk di Jakarta pada tahun 2020. Band ini terdiri dari Putra (vokal, gitar), Iman (gitar), Arief (bass), dan Adit (drum).</item>
+        <item>Reality Club adalah band indie pop Indonesia yang dibentuk di Jakarta pada tahun 2021. Band ini terdiri dari Rayhan Noor (vokal, gitar), Arya Aditya (gitar), Ariq Fadhil (bass), dan Reza (drum).</item>
+        <item>The Walters adalah band rock alternatif Indonesia yang dibentuk di Jakarta pada tahun 2022. Band ini terdiri dari Bayu (vokal, gitar), Arief (gitar), Ariq (bass), dan Adit (drum).</item>
+        <item>Twenty One Pilots adalah band rock alternatif Amerika Serikat yang dibentuk di Columbus, Ohio pada tahun 2009. Band ini terdiri dari Tyler Joseph (vokal, keyboard, gitar, bass) dan Josh Dun (drum, perkusi, backing vokal).</item>
+        <item>Vacations adalah band rock Indonesia yang dibentuk di Jakarta pada tahun 2023. Band ini terdiri dari Angga (vokal), Fajar (gitar), Arief (bass), dan Indra (drum).</item>
+    </string-array>
+
+    <integer-array name="data_sampul">
+        <item>@drawable/amigdala</item>
+        <item>@drawable/andra</item>
+        <item>@drawable/banda_neira</item>
+        <item>@drawable/for_revenge</item>
+        <item>@drawable/ghea_indrawati</item>
+        <item>@drawable/hindia</item>
+        <item>@drawable/keshi</item>
+        <item>@drawable/last_child</item>
+        <item>@drawable/notion</item>
+        <item>@drawable/olivia_rodrigo</item>
+        <item>@drawable/phoneme</item>
+        <item>@drawable/reality_club</item>
+        <item>@drawable/the_walters</item>
+        <item>@drawable/twenty_one_pilots</item>
+        <item>@drawable/vacations</item>
+    </integer-array>
+
+</resources>
