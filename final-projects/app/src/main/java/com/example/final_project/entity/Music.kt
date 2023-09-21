@@ -7,5 +7,7 @@ import kotlinx.android.parcel.Parcelize
 data class Music(
     val judul: String,
     val deskripsi: String,
+    val youtubeID: String,
+    val lirik: String,
     val sampul: Int
 ) : Parcelable

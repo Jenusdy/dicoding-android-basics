@@ -1,19 +1,27 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Finalproject" parent="Theme.Material3.DayNight">
-        <item name="colorPrimary">@color/teal</item>
+        <item name="colorPrimary">@color/orange_dark</item>
         <item name="colorSecondary">@color/yellow</item>
         <item name="colorAccent">@color/red</item>
         <item name="toolbarStyle">@style/Theme.Custom.Toolbar</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.App.ActionButton.Overflow</item>
+        <item name="android:homeAsUpIndicator">@drawable/arrow_back_ios_24</item>
+        <item name="android:windowSplashScreenBackground">@color/yellow</item>
     </style>
 
 
     <style name="Theme.Custom.Toolbar" parent="Widget.Material3.Toolbar">
-        <item name="android:background">@color/teal</item>
+        <item name="android:background">@color/orange</item>
         <item name="titleTextColor">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
     </style>
 
+    <style name="Widget.App.ActionButton.Overflow" parent="Widget.Material3.Search.ActionButton.Overflow">
+        <item name="tint">@color/white</item>
+    </style>
 
     <style name="Theme.Finalproject" parent="Base.Theme.Finalproject" />
+
 
 </resources>

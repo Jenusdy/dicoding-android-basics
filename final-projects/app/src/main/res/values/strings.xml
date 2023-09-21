@@ -3,6 +3,15 @@
 
     <string name="judul_music">Judul Music</string>
     <string name="deskripsi_band">Deskripsi</string>
+    <string name="judul_lagu">Judul Lagu</string>
+    <string name="about_me">About me</string>
+    <string name="staggered">Staggered</string>
+    <string name="list_view">List View</string>
+    <string name="grid_view">Grid View</string>
+    <string name="share">Share</string>
+    <string name="share_text">Hello, Guys. Lagu ini sangat menyetuh dengarkan sekarang juga di Aplikasi Musyrik</string>
+    <string name="send_to">Pilih aplikasi</string>
+    <string name="my_name">Fawcet Jenusdy Makay</string>
 
     <string-array name="data_judul">
         <item>Amigdala - Kukira kau rumah</item>
@@ -20,6 +29,24 @@
         <item>The Walters - I love you so</item>
         <item>Twenty One Pilots - Ride</item>
         <item>Young - Vacations</item>
+    </string-array>
+
+    <string-array name="data_youtube">
+        <item>q7Fu7d1ppbI</item>
+        <item>2CuaBaufrw4</item>
+        <item>JjFeJ608VKc</item>
+        <item>bGsMkd8qHWI</item>
+        <item>t9VWICGOD90</item>
+        <item>S0Kez6MERGE</item>
+        <item>1i8WJ8cRWsE</item>
+        <item>8zwz2fVgfVM</item>
+        <item>PD1EXJScA6k</item>
+        <item>cii6ruuycQA</item>
+        <item>0pJxNl_9x2U</item>
+        <item>-CuOwVTgpso</item>
+        <item>NwFVSclD_uc</item>
+        <item>Pw-0pbY9JeU</item>
+        <item>nK61uvq5tX4</item>
     </string-array>
 
     <string-array name="data_deskripsi">
@@ -57,5 +84,85 @@
         <item>@drawable/twenty_one_pilots</item>
         <item>@drawable/vacations</item>
     </integer-array>
+
+    <string-array name="data_lirik">
+        <item>Lagu ini menceritakan tentang seseorang yang merasa tertipu setelah jatuh cinta.
+            Ia merasa bahwa ia telah menemukan cinta sejatinya, tetapi ia juga merasa bahwa ia
+            tidak akan pernah bisa memilikinya. Pada awalnya, orang tersebut merasa seperti telah
+            menemukan rumah setelah bertemu dengan orang yang dicintainya. Ia merasa nyaman dan
+            terlindungi. Namun, kemudian ia menyadari bahwa orang tersebut hanya datang dan pergi
+            dalam hidupnya. Ia merasa bahwa ia hanyalah sewaan dari tubuh orang lain.
+            Hal ini membuat orang tersebut merasa sakit dan kecewa. Ia tidak tahu mengapa ia masih
+            bertahan dalam hubungan yang tidak sehat itu. Ia merasa terjebak di antara cinta dan sakit.
+            Pada akhirnya, orang tersebut menyadari bahwa ia harus melepaskan orang tersebut.
+            Ia harus mencari rumah yang sesungguhnya, bukan orang yang hanya datang dan pergi
+            dalam hidupnya.</item>
+        <item>Lagu ini menceritakan tentang seseorang yang sedang berusaha untuk melupakan mantan
+            kekasihnya. Ia merasa bahwa mantan kekasihnya adalah cinta terdalamnya, dan ia tidak
+            bisa melupakannya begitu saja.Pada bait pertama, orang tersebut menggambarkan bahwa ia
+            masih menyimpan kenangan bersama mantan kekasihnya. Ia masih mengingat setiap momen
+            indah yang mereka lalui bersama. Pada bait kedua, orang tersebut mengungkapkan rasa
+            sakitnya yang mendalam. Ia merasa kehilangan dan kesepian tanpa mantan kekasihnya.
+            Pada bait ketiga, orang tersebut akhirnya menyadari bahwa ia harus melepaskan mantan
+            kekasihnya. Ia harus belajar untuk hidup tanpanya. Pada bait keempat, orang tersebut
+            mengucapkan selamat tinggal kepada mantan kekasihnya. Ia berharap bahwa mantan
+            kekasihnya akan bahagia, meskipun bukan bersamanya.
+        </item>
+        <item>Lagu "Sampai Jadi Debu" oleh Banda Neira menceritakan tentang kisah cinta dua orang
+            yang telah lama bersama. Mereka telah melalui banyak hal bersama, baik suka maupun duka.
+            Namun, seiring berjalannya waktu, cinta mereka mulai memudar.Pada bait pertama,
+            orang tersebut menggambarkan bahwa ia dan pasangannya telah bersama selama
+            bertahun-tahun. Mereka telah melalui banyak hal bersama, baik suka maupun duka.
+            Pada bait kedua, orang tersebut mengungkapkan bahwa cintanya pada pasangannya
+            mulai memudar. Ia merasa bahwa mereka telah tumbuh berbeda. Pada bait ketiga, orang
+            tersebut menyadari bahwa cintanya pada pasangannya telah berakhir. Ia merasa bahwa
+            mereka harus berpisah. Pada bait keempat, orang tersebut mengucapkan selamat tinggal
+            kepada pasangannya. Ia berharap bahwa pasangannya akan bahagia, meskipun bukan bersamanya.
+        </item>
+        <item>Lagu "Serana" oleh For Revenge menceritakan tentang seseorang yang sedang berusaha
+            untuk melupakan mantan kekasihnya. Ia merasa bahwa mantan kekasihnya adalah cinta
+            sejatinya, dan ia tidak bisa melupakannya begitu saja. Pada bait pertama, orang
+            tersebut menggambarkan bahwa ia masih menyimpan kenangan bersama mantan kekasihnya.
+            Ia masih mengingat setiap momen indah yang mereka lalui bersama.
+            Pada bait kedua, orang tersebut mengungkapkan rasa sakitnya yang mendalam. Ia
+            merasa kehilangan dan kesepian tanpa mantan kekasihnya. Pada bait ketiga, orang tersebut
+            akhirnya menyadari bahwa ia harus melepaskan mantan kekasihnya. Ia harus belajar
+            untuk hidup tanpanya. Pada bait keempat, orang tersebut mengucapkan selamat tinggal
+            kepada mantan kekasihnya. Ia berharap bahwa mantan kekasihnya akan bahagia,
+            meskipun bukan bersamanya.
+        </item>
+        <item>Dalam lagu ini, Ghea mencoba menjelaskan perubahan yang telah terjadi dalam dirinya kepada seseorang yang dekat dengannya. Ia merasa kebingungan dan tak bisa memahami mengapa dirinya berubah seiring berjalannya waktu. Bait pertama menggambarkan betapa sulitnya menjelaskan perasaan ini kepada orang lain yang mungkin merasa kebingungan terhadap perubahan tersebut. Ghea mencoba mengungkapkan bahwa dalam dirinya ada sebuah jiwa yang bersedih, yang hanya bisa terlihat melalui mata dan dirasakan oleh mereka yang juga pernah merasakan luka yang sama. Dalam bait kedua, Ghea merujuk pada hilangnya cinta dalam hatinya, yang sudah tidak ada lagi, meskipun ia telah berusaha dengan keras untuk mempertahankan hubungan tersebut. Bagian ini mencerminkan rasa putus asa dan kepedihan yang dialaminya. Kemudian, dalam jembatan lagu, Ghea berbicara kepada orang tersebut, memohon agar mereka memahaminya dan menyadari bahwa ia tidak ingin berada dalam keadaan sedih ini, namun ia merasa terjebak dan tidak bisa mengubahnya tanpa dukungan dan pemahaman dari mereka yang ia cintai. Dalam ulangan chorus, Ghea kembali menegaskan bahwa hanya mereka yang telah mengalami luka yang sama yang bisa benar-benar memahami jiwa yang bersedih dalam dirinya. Melalui lagu ini, Ghea mencoba menyampaikan perasaan yang mendalam dan kompleks yang sering kali sulit diungkapkan dalam kata-kata.</item>
+        <item>Dalam lagu ini, Hindia menggambarkan perasaan rumit dalam hubungan yang pernah ia jalani. Lirik mengungkapkan bagaimana perasaan cinta dan keterikatan bisa menjadi seperti "cincin yang enggan dilepas" yang melekat pada jari-jari mereka. Namun, seiring berjalannya waktu, hubungan itu mulai merosot dan menjadi toksik, seperti "paku dalam cincin yang tajam." Hindia merasa terjebak dalam hubungan yang tidak sehat, tetapi juga takut untuk melepaskannya karena ada perasaan cinta yang masih ada. Lagu ini juga menggambarkan perasaan kontradiktif di mana seseorang ingin mengakhiri hubungan yang menyakitkan, tetapi juga tidak ingin kehilangan apa yang pernah ada. Ini mencerminkan perjalanan emosional yang kompleks dalam hubungan, di mana seseorang akhirnya harus membuat keputusan yang sulit untuk melepaskan apa yang merusak mereka demi kesejahteraan mereka sendiri. "Cincin" oleh Hindia adalah penggambaran yang kuat tentang perasaan dan dilema dalam hubungan yang berubah dan mengkhawatirkan, dan banyak pendengar mungkin dapat merelakan ke dalam pengalaman pribadi mereka sendiri dalam cinta dan kehilangan.</item>
+        <item>Arti Lagu Ketujuh - Lagu ini menceritakan tentang seseorang yang merasa tertipu setelah jatuh cinta. Ia merasa bahwa ia telah menemukan cinta sejatinya, tetapi ia juga merasa bahwa ia tidak akan pernah bisa memilikinya.
+            Pada awalnya, orang tersebut merasa seperti telah menemukan rumah setelah bertemu dengan orang yang dicintainya. Ia merasa nyaman dan terlindungi. Namun, kemudian ia menyadari bahwa orang tersebut hanya datang dan pergi dalam hidupnya. Ia merasa bahwa ia hanyalah sewaan dari tubuh orang lain.
+            Hal ini membuat orang tersebut merasa sakit dan kecewa. Ia tidak tahu mengapa ia masih bertahan dalam hubungan yang tidak sehat itu. Ia merasa terjebak di antara cinta dan sakit.
+            Pada akhirnya, orang tersebut menyadari bahwa ia harus melepaskan orang tersebut. Ia harus mencari rumah yang sesungguhnya, bukan orang yang hanya datang dan pergi dalam hidupnya.</item>
+        <item>Lagu "Duka" menciptakan suasana yang penuh emosi tentang perasaan sakit hati dan kehilangan dalam sebuah hubungan cinta. Lirik-liriknya menggambarkan rasa duka dan kepedihan yang dirasakan oleh seseorang yang merasa dicampakkan dan dikhianati oleh orang yang dicintainya. Ia merasa seperti hidup dalam bayang-bayang kekecewaan dan terus-menerus mengenang kenangan-kenangan yang indah sebelum hubungan tersebut berakhir. Lagu ini menciptakan perasaan nostalgia dan sedih, dan menjadi salah satu lagu populer di Indonesia yang banyak orang bisa merelakan diri dalam pengalaman kehilangan dan putus cinta mereka.</item>
+        <item>The Rare Occasions are known for their energetic and catchy indie rock sound. Their music often features a mix of guitar-driven melodies, strong rhythms, and emotive vocals. "Notion" is likely to be in line with their signature style, which typically includes introspective and poetic lyrics that explore themes related to love, relationships, and personal experiences.</item>
+        <item>Arti Lagu Kesepuluh - Lagu ini menceritakan tentang seseorang yang merasa tertipu setelah jatuh cinta. Ia merasa bahwa ia telah menemukan cinta sejatinya, tetapi ia juga merasa bahwa ia tidak akan pernah bisa memilikinya.
+            Pada awalnya, orang tersebut merasa seperti telah menemukan rumah setelah bertemu dengan orang yang dicintainya. Ia merasa nyaman dan terlindungi. Namun, kemudian ia menyadari bahwa orang tersebut hanya datang dan pergi dalam hidupnya. Ia merasa bahwa ia hanyalah sewaan dari tubuh orang lain.
+            Hal ini membuat orang tersebut merasa sakit dan kecewa. Ia tidak tahu mengapa ia masih bertahan dalam hubungan yang tidak sehat itu. Ia merasa terjebak di antara cinta dan sakit.
+            Pada akhirnya, orang tersebut menyadari bahwa ia harus melepaskan orang tersebut. Ia harus mencari rumah yang sesungguhnya, bukan orang yang hanya datang dan pergi dalam hidupnya.</item>
+        <item>Arti Lagu Kesebelas- Lagu ini menceritakan tentang seseorang yang merasa tertipu setelah jatuh cinta. Ia merasa bahwa ia telah menemukan cinta sejatinya, tetapi ia juga merasa bahwa ia tidak akan pernah bisa memilikinya.
+            Pada awalnya, orang tersebut merasa seperti telah menemukan rumah setelah bertemu dengan orang yang dicintainya. Ia merasa nyaman dan terlindungi. Namun, kemudian ia menyadari bahwa orang tersebut hanya datang dan pergi dalam hidupnya. Ia merasa bahwa ia hanyalah sewaan dari tubuh orang lain.
+            Hal ini membuat orang tersebut merasa sakit dan kecewa. Ia tidak tahu mengapa ia masih bertahan dalam hubungan yang tidak sehat itu. Ia merasa terjebak di antara cinta dan sakit.
+            Pada akhirnya, orang tersebut menyadari bahwa ia harus melepaskan orang tersebut. Ia harus mencari rumah yang sesungguhnya, bukan orang yang hanya datang dan pergi dalam hidupnya.</item>
+        <item>Arti Lagu Keduabelas - Lagu ini menceritakan tentang seseorang yang merasa tertipu setelah jatuh cinta. Ia merasa bahwa ia telah menemukan cinta sejatinya, tetapi ia juga merasa bahwa ia tidak akan pernah bisa memilikinya.
+            Pada awalnya, orang tersebut merasa seperti telah menemukan rumah setelah bertemu dengan orang yang dicintainya. Ia merasa nyaman dan terlindungi. Namun, kemudian ia menyadari bahwa orang tersebut hanya datang dan pergi dalam hidupnya. Ia merasa bahwa ia hanyalah sewaan dari tubuh orang lain.
+            Hal ini membuat orang tersebut merasa sakit dan kecewa. Ia tidak tahu mengapa ia masih bertahan dalam hubungan yang tidak sehat itu. Ia merasa terjebak di antara cinta dan sakit.
+            Pada akhirnya, orang tersebut menyadari bahwa ia harus melepaskan orang tersebut. Ia harus mencari rumah yang sesungguhnya, bukan orang yang hanya datang dan pergi dalam hidupnya.</item>
+        <item>Arti Lagu Ketigabelas - Lagu ini menceritakan tentang seseorang yang merasa tertipu setelah jatuh cinta. Ia merasa bahwa ia telah menemukan cinta sejatinya, tetapi ia juga merasa bahwa ia tidak akan pernah bisa memilikinya.
+            Pada awalnya, orang tersebut merasa seperti telah menemukan rumah setelah bertemu dengan orang yang dicintainya. Ia merasa nyaman dan terlindungi. Namun, kemudian ia menyadari bahwa orang tersebut hanya datang dan pergi dalam hidupnya. Ia merasa bahwa ia hanyalah sewaan dari tubuh orang lain.
+            Hal ini membuat orang tersebut merasa sakit dan kecewa. Ia tidak tahu mengapa ia masih bertahan dalam hubungan yang tidak sehat itu. Ia merasa terjebak di antara cinta dan sakit.
+            Pada akhirnya, orang tersebut menyadari bahwa ia harus melepaskan orang tersebut. Ia harus mencari rumah yang sesungguhnya, bukan orang yang hanya datang dan pergi dalam hidupnya.</item>
+        <item>Arti Lagu Keempatbelas - Lagu ini menceritakan tentang seseorang yang merasa tertipu setelah jatuh cinta. Ia merasa bahwa ia telah menemukan cinta sejatinya, tetapi ia juga merasa bahwa ia tidak akan pernah bisa memilikinya.
+            Pada awalnya, orang tersebut merasa seperti telah menemukan rumah setelah bertemu dengan orang yang dicintainya. Ia merasa nyaman dan terlindungi. Namun, kemudian ia menyadari bahwa orang tersebut hanya datang dan pergi dalam hidupnya. Ia merasa bahwa ia hanyalah sewaan dari tubuh orang lain.
+            Hal ini membuat orang tersebut merasa sakit dan kecewa. Ia tidak tahu mengapa ia masih bertahan dalam hubungan yang tidak sehat itu. Ia merasa terjebak di antara cinta dan sakit.
+            Pada akhirnya, orang tersebut menyadari bahwa ia harus melepaskan orang tersebut. Ia harus mencari rumah yang sesungguhnya, bukan orang yang hanya datang dan pergi dalam hidupnya.</item>
+        <item>Arti Lagu Kelimabelas - Lagu ini menceritakan tentang seseorang yang merasa tertipu setelah jatuh cinta. Ia merasa bahwa ia telah menemukan cinta sejatinya, tetapi ia juga merasa bahwa ia tidak akan pernah bisa memilikinya.
+            Pada awalnya, orang tersebut merasa seperti telah menemukan rumah setelah bertemu dengan orang yang dicintainya. Ia merasa nyaman dan terlindungi. Namun, kemudian ia menyadari bahwa orang tersebut hanya datang dan pergi dalam hidupnya. Ia merasa bahwa ia hanyalah sewaan dari tubuh orang lain.
+            Hal ini membuat orang tersebut merasa sakit dan kecewa. Ia tidak tahu mengapa ia masih bertahan dalam hubungan yang tidak sehat itu. Ia merasa terjebak di antara cinta dan sakit.
+            Pada akhirnya, orang tersebut menyadari bahwa ia harus melepaskan orang tersebut. Ia harus mencari rumah yang sesungguhnya, bukan orang yang hanya datang dan pergi dalam hidupnya.</item>
+    </string-array>
 
 </resources>
