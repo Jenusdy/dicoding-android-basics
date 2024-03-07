@@ -1,8 +1,10 @@
 package com.example.restaurant_review.ui
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,6 +13,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.restaurant_review.data.response.CustomerReviewsItem
+import com.example.restaurant_review.data.response.PostReviewResponse
 import com.example.restaurant_review.data.response.Restaurant
 import com.example.restaurant_review.data.response.RestaurantResponse
 import com.example.restaurant_review.data.retrofit.ApiConfig
@@ -26,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         private const val RESTAURANT_ID = "uewq1zg2zlskfw1e867"
     }
 
-    private lateinit var binding : ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -37,7 +40,41 @@ class MainActivity : AppCompatActivity() {
         binding.rvReview.layoutManager = layoutManager
         val itemDecoration = DividerItemDecoration(this, layoutManager.orientation)
         binding.rvReview.addItemDecoration(itemDecoration)
+
         findRestaurant()
+
+        binding.btnSend.setOnClickListener {
+            postReview(binding.edReview.text.toString())
+            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(it.windowToken, 0)
+        }
+    }
+
+    private fun postReview(review: String) {
+        showLoading(true)
+        val client = ApiConfig.getApiService().postReview(
+            RESTAURANT_ID, "Dicoding", review
+        )
+
+        client.enqueue(object : Callback<PostReviewResponse> {
+            override fun onResponse(
+                call: Call<PostReviewResponse>, response: Response<PostReviewResponse>
+            ) {
+                showLoading(false)
+                val responseBody = response.body()
+                if (response.isSuccessful && responseBody != null) {
+                    setReviewData(responseBody.customerReviews)
+                } else {
+                    Log.e(TAG, "onFailure: ${response.message()}")
+                }
+            }
+
+            override fun onFailure(call: Call<PostReviewResponse>, t: Throwable) {
+                showLoading(false)
+                Log.e(TAG, "onFailure: ${t.message}")
+            }
+
+        })
     }
 
     private fun findRestaurant() {
@@ -45,8 +82,7 @@ class MainActivity : AppCompatActivity() {
         val client = ApiConfig.getApiService().getRestaurant(RESTAURANT_ID)
         client.enqueue(object : Callback<RestaurantResponse> {
             override fun onResponse(
-                call: Call<RestaurantResponse>,
-                response: Response<RestaurantResponse>
+                call: Call<RestaurantResponse>, response: Response<RestaurantResponse>
             ) {
                 showLoading(false)
                 if (response.isSuccessful) {
@@ -59,6 +95,7 @@ class MainActivity : AppCompatActivity() {
                     Log.e(TAG, "onFailure: ${response.message()}")
                 }
             }
+
             override fun onFailure(call: Call<RestaurantResponse>, t: Throwable) {
                 showLoading(false)
                 Log.e(TAG, "onFailure: ${t.message}")
@@ -73,6 +110,7 @@ class MainActivity : AppCompatActivity() {
             .load("https://restaurant-api.dicoding.dev/images/large/${restaurant.pictureId}")
             .into(binding.ivPicture)
     }
+
     private fun setReviewData(consumerReviews: List<CustomerReviewsItem>) {
         val adapter = ReviewAdapter()
         adapter.submitList(consumerReviews)
