@@ -1,4 +1,4 @@
-package com.dicoding.tourismapp.core.di
+package com.dicoding.tourismapp.di
 
 import android.content.Context
 
@@ -7,11 +7,14 @@ import com.dicoding.tourismapp.core.data.source.local.room.TourismDatabase
 
 import com.dicoding.tourismapp.core.data.TourismRepository
 import com.dicoding.tourismapp.core.data.source.remote.RemoteDataSource
-import com.dicoding.tourismapp.core.utils.AppExecutors
-import com.dicoding.tourismapp.core.utils.JsonHelper
+import com.dicoding.tourismapp.domain.repository.ITourismRepository
+import com.dicoding.tourismapp.domain.usecase.TourismInteractor
+import com.dicoding.tourismapp.domain.usecase.TourismUseCase
+import com.dicoding.tourismapp.utils.AppExecutors
+import com.dicoding.tourismapp.utils.JsonHelper
 
 object Injection {
-    fun provideRepository(context: Context): TourismRepository {
+    fun provideRepository(context: Context): ITourismRepository {
         val database = TourismDatabase.getInstance(context)
 
         val remoteDataSource = RemoteDataSource.getInstance(JsonHelper(context))
@@ -19,5 +22,10 @@ object Injection {
         val appExecutors = AppExecutors()
 
         return TourismRepository.getInstance(remoteDataSource, localDataSource, appExecutors)
+    }
+
+    fun provideTourismUseCase(context: Context): TourismUseCase {
+        val repository = provideRepository(context)
+        return TourismInteractor(repository)
     }
 }

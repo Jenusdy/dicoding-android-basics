@@ -1,4 +1,4 @@
-package com.dicoding.tourismapp.detail
+package com.dicoding.tourismapp.ui.detail
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +9,7 @@ import com.dicoding.tourismapp.R
 import com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity
 import com.dicoding.tourismapp.core.ui.ViewModelFactory
 import com.dicoding.tourismapp.databinding.ActivityDetailTourismBinding
+import com.dicoding.tourismapp.domain.model.Tourism
 
 class DetailTourismActivity : AppCompatActivity() {
 
@@ -29,11 +30,11 @@ class DetailTourismActivity : AppCompatActivity() {
         val factory = ViewModelFactory.getInstance(this)
         detailTourismViewModel = ViewModelProvider(this, factory)[DetailTourismViewModel::class.java]
 
-        val detailTourism = intent.getParcelableExtra<TourismEntity>(EXTRA_DATA)
+        val detailTourism = intent.getParcelableExtra<Tourism>(EXTRA_DATA)
         showDetailTourism(detailTourism)
     }
 
-    private fun showDetailTourism(detailTourism: TourismEntity?) {
+    private fun showDetailTourism(detailTourism: Tourism?) {
         detailTourism?.let {
             supportActionBar?.title = detailTourism.name
             binding.content.tvDetailDescription.text = detailTourism.description

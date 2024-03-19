@@ -1,5 +1,6 @@
 package com.dicoding.tourismapp.core.data.source.local.entity
 
+import android.os.Parcel
 import android.os.Parcelable
 import androidx.annotation.NonNull
 import androidx.room.ColumnInfo

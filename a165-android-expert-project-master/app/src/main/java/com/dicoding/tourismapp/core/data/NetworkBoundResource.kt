@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import com.dicoding.tourismapp.core.data.source.remote.network.ApiResponse
 
-import com.dicoding.tourismapp.core.utils.AppExecutors
+import com.dicoding.tourismapp.utils.AppExecutors
 
 abstract class NetworkBoundResource<ResultType, RequestType>(private val mExecutors: AppExecutors) {
 

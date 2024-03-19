@@ -7,7 +7,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.dicoding.tourismapp.core.data.source.remote.network.ApiResponse
 import com.dicoding.tourismapp.core.data.source.remote.response.TourismResponse
-import com.dicoding.tourismapp.core.utils.JsonHelper
+import com.dicoding.tourismapp.utils.JsonHelper
 import org.json.JSONException
 
 class RemoteDataSource private constructor(private val jsonHelper: JsonHelper) {

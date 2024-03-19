@@ -13,7 +13,7 @@
         android:theme="@style/Theme.TourismApp">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:theme="@style/Theme.TourismApp.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,7 @@
         </activity>
 
         <activity
-            android:name=".detail.DetailTourismActivity"
+            android:name="com.dicoding.tourismapp.ui.detail.DetailTourismActivity"
             android:label="@string/title_activity_detail_home"
             android:theme="@style/Theme.TourismApp.NoActionBar" />
     </application>
