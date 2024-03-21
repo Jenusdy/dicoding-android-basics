@@ -10,6 +10,11 @@ import com.dicoding.tourismapp.core.data.source.remote.network.ApiService
 import com.dicoding.tourismapp.core.data.source.remote.response.ListTourismResponse
 import com.dicoding.tourismapp.core.data.source.remote.response.TourismResponse
 import com.dicoding.tourismapp.utils.JsonHelper
+import io.reactivex.BackpressureStrategy
+import io.reactivex.Flowable
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.schedulers.Schedulers
+import io.reactivex.subjects.PublishSubject
 import org.json.JSONException
 import retrofit2.Call
 import retrofit2.Callback
@@ -26,27 +31,27 @@ class RemoteDataSource private constructor(private val apiService: ApiService) {
             }
     }
 
-    fun getAllTourism(): LiveData<ApiResponse<List<TourismResponse>>> {
-        val resultData = MutableLiveData<ApiResponse<List<TourismResponse>>>()
+    fun getAllTourism(): Flowable<ApiResponse<List<TourismResponse>>> {
+        val resultData = PublishSubject.create<ApiResponse<List<TourismResponse>>>()
 
         //get data from local json
-        val client = apiService.getList().enqueue(object : Callback<ListTourismResponse> {
-            override fun onResponse(
-                call: Call<ListTourismResponse>,
-                response: Response<ListTourismResponse>
-            ) {
-                val dataArray = response.body()?.places
-                resultData.value = if (dataArray != null) ApiResponse.Success(dataArray) else ApiResponse.Empty
-            }
+        val client = apiService.getList()
 
-            override fun onFailure(call: Call<ListTourismResponse>, t: Throwable) {
-                resultData.value = ApiResponse.Error(t.message.toString())
-                Log.e("RemoteDataSource", t.message.toString())
-            }
+        client
+            .subscribeOn(Schedulers.computation())
+            .observeOn(AndroidSchedulers.mainThread())
+            .take(1)
+            .subscribe({
+                val dataArray = it.places
+                resultData.onNext(
+                    if (dataArray.isNotEmpty()) ApiResponse.Success(dataArray) else ApiResponse.Empty
+                )
+            }, {
+                resultData.onNext(ApiResponse.Error(it.message.toString()))
+                Log.e("RemoteDataSource", it.toString())
+            })
 
-        })
-
-        return resultData
+        return resultData.toFlowable(BackpressureStrategy.BUFFER)
     }
 }
 

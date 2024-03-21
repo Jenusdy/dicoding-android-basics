@@ -10,6 +10,7 @@ import com.dicoding.tourismapp.utils.AppExecutors
 import com.dicoding.tourismapp.utils.DataMapper
 import com.dicoding.tourismapp.domain.model.Tourism
 import com.dicoding.tourismapp.domain.repository.ITourismRepository
+import io.reactivex.Flowable
 
 class TourismRepository private constructor(
     private val remoteDataSource: RemoteDataSource,
@@ -31,10 +32,10 @@ class TourismRepository private constructor(
             }
     }
 
-    override fun getAllTourism(): LiveData<Resource<List<Tourism>>> =
+    override fun getAllTourism(): Flowable<Resource<List<Tourism>>> =
         object : NetworkBoundResource<List<Tourism>, List<TourismResponse>>(appExecutors) {
-            override fun loadFromDB(): LiveData<List<Tourism>> {
-                return Transformations.map(localDataSource.getAllTourism()) {
+            override fun loadFromDB(): Flowable<List<Tourism>> {
+                return localDataSource.getAllTourism().map {
                     DataMapper.mapEntitiesToDomain(it)
                 }
             }
@@ -42,17 +43,17 @@ class TourismRepository private constructor(
             override fun shouldFetch(data: List<Tourism>?): Boolean =
                 data == null || data.isEmpty()
 
-            override fun createCall(): LiveData<ApiResponse<List<TourismResponse>>> =
+            override fun createCall(): Flowable<ApiResponse<List<TourismResponse>>> =
                 remoteDataSource.getAllTourism()
 
             override fun saveCallResult(data: List<TourismResponse>) {
                 val tourismList = DataMapper.mapResponsesToEntities(data)
                 localDataSource.insertTourism(tourismList)
             }
-        }.asLiveData()
+        }.asFlowable()
 
-    override fun getFavoriteTourism(): LiveData<List<Tourism>> {
-        return Transformations.map(localDataSource.getFavoriteTourism()) {
+    override fun getFavoriteTourism(): Flowable<List<Tourism>> {
+        return localDataSource.getFavoriteTourism().map {
             DataMapper.mapEntitiesToDomain(it)
         }
     }
