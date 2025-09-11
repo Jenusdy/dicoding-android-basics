@@ -8,8 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.final_project.DetailActivity
-import com.example.final_project.R
 import com.example.final_project.entity.Music
+import io.github.jenusdy.musyrik.R
 
 class ListMusicAdapter (
     private val listMusic: ArrayList<Music>

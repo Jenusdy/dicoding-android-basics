@@ -1,17 +1,19 @@
 package com.example.final_project
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.LayoutManager
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.final_project.adapter.ListMusicAdapter
 import com.example.final_project.entity.Music
+import io.github.jenusdy.musyrik.R
 
 class MainActivity : AppCompatActivity() {
     private lateinit var rvMusic: RecyclerView
@@ -20,6 +22,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.rootLayout)) { v, insets ->
+            val statusBarInsets = insets.getInsets(WindowInsetsCompat.Type.statusBars())
+            v.setPadding(0, statusBarInsets.top, 0, 0)
+            insets
+        }
 
         rvMusic = findViewById(R.id.rv_music)
         rvMusic.setHasFixedSize(true)

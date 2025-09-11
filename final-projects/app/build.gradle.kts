@@ -5,15 +5,15 @@ plugins {
 }
 
 android {
-    namespace = "com.example.final_project"
-    compileSdk = 33
+    namespace = "io.github.jenusdy.musyrik"
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.final_project"
+        applicationId = "io.github.jenusdy.musyrik"
         minSdk = 24
-        targetSdk = 33
-        versionCode = 1
-        versionName = "1.0"
+        targetSdk = 35
+        versionCode = 5
+        versionName = "1.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -40,15 +40,15 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.9.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("androidx.core:core-splashscreen:1.0.0")
-    implementation("com.pierfrancescosoffritti.androidyoutubeplayer:core:12.1.0")
+    implementation("androidx.core:core-ktx:1.17.0")
+    implementation("androidx.appcompat:appcompat:1.7.1")
+    implementation("com.google.android.material:material:1.13.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.2.1")
+    implementation("androidx.core:core-splashscreen:1.0.1")
+    implementation("com.pierfrancescosoffritti.androidyoutubeplayer:core:12.1.2")
     implementation("de.hdodenhof:circleimageview:3.1.0")
 
     testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    androidTestImplementation("androidx.test.ext:junit:1.3.0")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")
 }
