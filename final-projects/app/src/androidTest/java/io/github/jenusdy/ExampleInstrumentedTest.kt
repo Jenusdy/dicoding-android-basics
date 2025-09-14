@@ -1,4 +1,4 @@
-package com.example.final_project
+package io.github.jenusdy
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

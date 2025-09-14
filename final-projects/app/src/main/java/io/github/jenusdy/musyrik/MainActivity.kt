@@ -1,4 +1,4 @@
-package com.example.final_project
+package io.github.jenusdy.musyrik
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,9 +11,8 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.final_project.adapter.ListMusicAdapter
-import com.example.final_project.entity.Music
-import io.github.jenusdy.musyrik.R
+import io.github.jenusdy.musyrik.adapter.ListMusicAdapter
+import io.github.jenusdy.musyrik.entity.Music
 
 class MainActivity : AppCompatActivity() {
     private lateinit var rvMusic: RecyclerView

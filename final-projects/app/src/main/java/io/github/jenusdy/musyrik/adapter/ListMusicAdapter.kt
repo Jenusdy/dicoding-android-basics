@@ -1,4 +1,4 @@
-package com.example.final_project.adapter
+package io.github.jenusdy.musyrik.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.final_project.DetailActivity
-import com.example.final_project.entity.Music
+import io.github.jenusdy.musyrik.DetailActivity
+import io.github.jenusdy.musyrik.entity.Music
 import io.github.jenusdy.musyrik.R
 
 class ListMusicAdapter (

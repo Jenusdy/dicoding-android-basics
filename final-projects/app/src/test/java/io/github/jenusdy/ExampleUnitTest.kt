@@ -1,4 +1,4 @@
-package com.example.final_project
+package io.github.jenusdy
 
 import org.junit.Test
 

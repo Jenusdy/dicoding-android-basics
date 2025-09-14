@@ -1,4 +1,4 @@
-package com.example.final_project.entity
+package io.github.jenusdy.musyrik.entity
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

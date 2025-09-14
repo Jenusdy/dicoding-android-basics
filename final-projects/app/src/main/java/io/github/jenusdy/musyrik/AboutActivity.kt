@@ -1,4 +1,4 @@
-package com.example.final_project
+package io.github.jenusdy.musyrik
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import io.github.jenusdy.musyrik.R
 
 class AboutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

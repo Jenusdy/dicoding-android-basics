@@ -1,4 +1,4 @@
-package com.example.final_project
+package io.github.jenusdy.musyrik
 
 import android.content.Intent
 import android.os.Build
@@ -10,11 +10,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.final_project.entity.Music
+import io.github.jenusdy.musyrik.entity.Music
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-import io.github.jenusdy.musyrik.R
 
 
 class DetailActivity : AppCompatActivity() {
